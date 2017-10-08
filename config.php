@@ -1,7 +1,4 @@
 <?php
-/*
- * variabel koneksi
- ***/
 $db_host	= 'localhost';
 $db_port	= '3307';
 $db_name	= 'db_login';

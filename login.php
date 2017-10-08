@@ -1,17 +1,8 @@
 <?php
-/*
- * periksa apakah ada 'login' di variable $_POST
- * $_POST['login'] didapat dari button di form login
- * $_POST['username'] didapat dari input text di form login
- * $_POST['password'] didapat dari input password di form login
- ***/
 if (isset($_POST['login'])) {
 	$username = htmlspecialchars($_POST['username']);
 	$password = htmlspecialchars($_POST['password']);
-	/*
-	 * query ke database
-	 * $db_conn didapat dari file koneksi.php
-	 ***/
+
 	$sql = "select * from users 
 		where username='$username' and password='$password'";
 	$rs = mysqlI_query($sql,$db_conn) or die (mysqlI_error());

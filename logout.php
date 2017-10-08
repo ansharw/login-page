@@ -1,8 +1,4 @@
 <?php
-/*
- * periksa apakah ada 'logout' di variable $_POST
- * $_POST['logout'] didapat dari button di form logout
- ***/
 if (isset($_POST['logout'])) {
 	session_destroy();
 	header('location: index.php');

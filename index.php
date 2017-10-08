@@ -1,13 +1,5 @@
 <?php 
-/*
- * start session
- ***/
 session_start();
-
-/*
- * bootstrap
- * include/require library yang diperlukan di sini
- ***/
 require_once('config.php');
 require_once('koneksi.php');
 
